@@ -1,8 +1,8 @@
 @charset "utf-8";
-
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900");
 // Define defaults for each variable.
 
-$base-font-family: "Avenir", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+$base-font-family: "Source Code Pro", 'monospace', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -11,8 +11,10 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$brand-color:      #a3e5c1 !default;
-$background-color: $brand-color !default;
+$brand-teal:      #a3e5c1 !default;
+$brand-orange:    #fcab75 !default;
+$brand-black:     #232222 !default;
+$background-color: #fff !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -42,10 +44,18 @@ $on-laptop:        800px !default;
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
-
+html,
+body,
+.page-content,
+.wrapper {
+  height: 100%;
+}
 body {
-  background-color: $brand-color;
+  background-color: $background-color;
+  border-left: 10px solid $brand-teal;
+  border-right: 10px solid $brand-teal;
   font-family: $base-font-family;
+  margin: 0;
 }
 
 .wrapper {
@@ -60,9 +70,15 @@ body {
   align-items: center;
   min-height: 25em;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
+  -webkit-justify-content: space-evenly;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 800px;
+  margin: 0 auto;
+
+  svg {
+    width: 40%;
+  }
 
   div {
     width: 80%;
@@ -70,40 +86,43 @@ body {
     text-align: center;
   }
 
-  #mc_embed_signup input.button,
-  #mc_embed_signup input.email {
-    width: 200px;
-    margin: 10px auto;
-  }
-
-  #mc_embed_signup input.email {
-    padding: 10px;
-  }
-
-  #mc_embed_signup input.button {
-    background-color: #000;
-  }
-
-  svg.logo {
-    width: 80%;
-    margin: 2em auto;
-    margin-top: 5em;
-  }
-
-  svg.proverb {
-    Width: 65%;
-    margin: 2em auto;
-  }
-
-  @media only screen and (min-device-width : 768px) {
-    svg.logo {
-      Width: 30%;
-      margin: 2em auto;
-      margin-top: 5em;
+  .landing-tagline {
+    margin: 20px auto;
+    p {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0;
     }
-    svg.proverb {
-      Width: 20%;
-      margin: 2em auto;
+  }
+
+  #mc_embed_signup {
+    p {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    form {
+      padding: 0;
+    }
+
+    input.button,
+    input.email {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    }
+
+    input.email {
+      padding: 10px 0;
+    }
+
+    input.button {
+      line-height: 55px;
+      width: 100%;
+      font-weight: 700;
+      color: $brand-black;
+      background-color: $brand-teal;
+      height: 100%;
     }
   }
 }
