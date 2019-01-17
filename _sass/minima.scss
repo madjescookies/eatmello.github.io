@@ -81,6 +81,9 @@ body {
   }
 
   svg {
+    @media screen and (max-width: 450px) {
+      width: 60%;
+    }
     width: 40%;
   }
 
@@ -97,10 +100,16 @@ body {
       font-size: 30px;
       margin: 0;
     }
+    p.landing-tagline__smaller {
+      font-size: 28px;
+    }
     @media screen and (max-width: 450px) {
       margin: 0 auto;
       p {
         font-size: 20px;
+      }
+      p.landing-tagline__smaller {
+        font-size: 18px;
       }
     }
   }
