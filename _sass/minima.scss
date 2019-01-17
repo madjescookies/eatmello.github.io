@@ -107,6 +107,9 @@ body {
 
   #mc_embed_signup {
     @media screen and (max-width: 450px) {
+      #mc_embed_signup_scroll {
+        width: 100%;
+      }
       p {
         font-size: 18px;
       }
