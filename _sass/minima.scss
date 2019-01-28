@@ -93,6 +93,15 @@ body {
     text-align: center;
   }
 
+  .social {
+    svg {width: 30px; height: 30px;margin: 10px;}
+    max-height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    webkit-justify-content: center;
+  }
+
   .landing-tagline {
     margin: 20px auto;
     p {
