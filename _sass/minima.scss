@@ -105,12 +105,9 @@ body {
   .landing-tagline {
     margin: 20px auto;
     p {
-      font-weight: 700;
+      font-weight: 400;
       font-size: 30px;
       margin: 0;
-    }
-    p.landing-tagline__smaller {
-      font-size: 28px;
     }
     @media screen and (max-width: 450px) {
       margin: 0 auto;
