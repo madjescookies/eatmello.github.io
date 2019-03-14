@@ -16,11 +16,10 @@
 title: "Madje's Cookies"
 email: cookies@madjes.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Delicious, one of a kind cookies that make you feel good.
-  Coming soon.
+  One of a kind cookies you won't be able to put down.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: madjescookies
+# twitter_username: madjescookies
 instagram_username: madjescookies
 
 # Build settings

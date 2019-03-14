@@ -11,7 +11,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$brand-teal:      #a3e5c1 !default;
+$brand-teal:      #aee7ed !default;
 $brand-orange:    #fcab75 !default;
 $brand-black:     #232222 !default;
 $background-color: #fff !default;
@@ -81,10 +81,10 @@ body {
   }
 
   svg {
-    @media screen and (max-width: 450px) {
-      width: 60%;
-    }
-    width: 40%;
+    // @media screen and (max-width: 450px) {
+    //   width: 60%;
+    // }
+    width: 60%;
   }
 
   div {
@@ -110,7 +110,8 @@ body {
       margin: 0;
     }
     p.landing-tagline__smaller {
-      font-size: 28px;
+      font-size: 20px;
+      font-weight: 200;
     }
     @media screen and (max-width: 450px) {
       margin: 0 auto;
@@ -118,7 +119,7 @@ body {
         font-size: 20px;
       }
       p.landing-tagline__smaller {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
   }
@@ -143,7 +144,7 @@ body {
 
     input.button,
     input.email {
-    width: 100%;
+    width: 60%;
     margin: 10px auto;
     text-align: center;
     }
@@ -154,7 +155,7 @@ body {
 
     input.button {
       line-height: 55px;
-      width: 100%;
+      // width: 100%;
       font-weight: 700;
       color: $brand-black;
       background-color: $brand-teal;
