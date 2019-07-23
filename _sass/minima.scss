@@ -10,10 +10,11 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
+$text-color:       #2D2C2D !default;
 $brand-teal:      #aee7ed !default;
-$brand-orange:    #fcab75 !default;
-$brand-black:     #232222 !default;
+$brand-cream:      #F6F6F3 !default;
+$brand-pink:    #EE2158 !default;
+$brand-black:     #2D2C2D !default;
 $background-color: #fff !default;
 
 $grey-color:       #828282 !default;
@@ -52,9 +53,10 @@ body,
 }
 body {
   background-color: $background-color;
-  border-left: 10px solid $brand-teal;
-  border-right: 10px solid $brand-teal;
+  border-left: 30px solid $brand-pink;
+  border-right: 30px solid $brand-pink;
   font-family: $base-font-family;
+  color: $brand-black;
   margin: 0;
 }
 
@@ -157,8 +159,8 @@ body {
       line-height: 55px;
       // width: 100%;
       font-weight: 700;
-      color: $brand-black;
-      background-color: $brand-teal;
+      color: $brand-cream;
+      background: $brand-black;
       height: 100%;
     }
   }
