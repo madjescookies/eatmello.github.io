@@ -1,0 +1,22 @@
+<footer>
+  <p class="">follow our journey</p>
+<div class="social">
+    <ul>
+      {%- if site.instagram_username -%}
+      <li>
+        <a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg> </a>
+      </li>
+        {%- endif -%}
+      {%- if site.facebook_username -%}
+      <li>
+        <a href="https://facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> </a>
+      </li>
+      {%- endif -%}
+      {%- if site.twitter_username -%}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> </a>
+      </li>
+      {%- endif -%}
+    </ul>
+  </div>
+</footer>
