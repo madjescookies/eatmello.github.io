@@ -59,6 +59,7 @@ body {
 }
 
 a {
+  color: $brand-black;
   text-decoration: none;
   &:visited {
     color: inherit;
@@ -183,6 +184,7 @@ header {
     background: $brand-cream;
     padding: 2em 0;
     border-radius: 8px;
+    width: 50%;
   }
 
   .landing-tagline {
