@@ -26,8 +26,9 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width:    800px !default;
 
-$on-tablet:          768px !default;
+$on-tablet:        768px !default;
 $on-laptop:        800px !default;
+$on-phone:         425px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -145,9 +146,12 @@ header {
     background-color: $brand-cream;
     width: 100%;
     text-align: center;
+    padding: 80px 0;
     p {
+      max-width: 1000px;
       padding: 0 10%;
       line-height: 2;
+      margin: 0 auto;
       &.text-emphasis {
         font-weight: bolder;
       }
@@ -183,9 +187,12 @@ header {
   }
   .landing-wrapper {
     background: $brand-cream;
-    padding: 2em 0;
+    padding: 3em 0;
     border-radius: 8px;
     width: 50%;
+    @media screen and (max-width: 450px) {
+      width: 80%;
+    }
   }
 
   .landing-tagline {
@@ -234,6 +241,14 @@ header {
     width: 50%;
     margin: 10px auto;
     text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    @media screen and (max-width: 450px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 15px;
+    }
   }
 
   input.email {
@@ -247,6 +262,7 @@ header {
     background: $brand-black;
     height: 100%;
     border: none;
+    font-weight: 300;
   }
 }
 
@@ -255,8 +271,8 @@ footer {
   padding: 10em 0;
   text-align: center;
   color: $brand-cream;
-  #mc_embed_signup {
-    width: 50%;
+  .form-wrapper {
+    max-width: 800px;
     margin: 0 auto;
   }
   &.Home {
