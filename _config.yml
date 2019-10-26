@@ -13,16 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Madje's Cookies"
-email: cookies@madjes.com
+title: "Eat Mello"
+email: team@eeatmello.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Bites of Happiness
+  Premium Edibles Gifting Service
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: madjescookies
-instagram_username: madjescookies
-facebook_username: madjescookies
-twitter_username: madjescookies
+instagram_username: eatmello
+facebook_username: eatmello
 
 # Build settings
 markdown: kramdown
