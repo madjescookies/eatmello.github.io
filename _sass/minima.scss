@@ -142,9 +142,18 @@ main {
       h2 {
         background: lighten($brand-teal, 10);
         display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+    .deets {
+      p {
+        line-height: 0.8em;
       }
     }
     p {
+      &.note {
+        line-height: 0.2;
+      }
       font-size: 1.5em;
       line-height: 1.5;
       b {
